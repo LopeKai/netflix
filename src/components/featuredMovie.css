@@ -1,0 +1,118 @@
+.featured {
+    height: 100vh;
+}
+
+.featured--vertical {
+    width: inherit; /* inherit(herdar) -> é pra herdar as informaçoes do pai*/
+    height: inherit;
+    background: linear-gradient(to top, #111 10%, transparent 90%);
+}
+
+.featured--horizontal {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to right, #111 30%, transparent 70%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    padding-bottom: 70px;
+    padding-top: 35px;
+}
+
+.featured--name {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.featured--info {
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.featured--points,
+.featured--year,
+.featured--seasons {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.featured--points {
+    color: #46d369;
+}
+
+.featured-description {
+    max-width: 40%;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #999;
+}
+
+.featured--buttons {
+    margin-top: 10px;
+}
+
+.featured--watchbutton,
+.featured--mylistbutton {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 9px 9px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+    letter-spacing: 1px;
+    opacity: 1;
+    transition: all ease 200ms;
+}
+
+.featured--watchbutton:hover,
+.featured--mylistbutton:hover {
+    opacity: 0.7;
+}
+
+.featured--watchbutton {
+    background-color: #fff;
+    color: #000;
+}
+
+.featured--mylistbutton  {
+    background-color: #333;
+    color: #fff;
+}
+
+.featured-genres {
+    margin-top: 10px;
+    font-size: 9px;
+    color: #999;
+    letter-spacing: 1px;
+}
+
+@media(max-width: 760px) {
+    .featured {
+        height: 60vh;
+        border: 1px solid blue;
+    }
+
+    .featured--name {
+        font-size: 25px;
+    }
+
+    .featured--info {
+        font-size: 16px;
+    }
+
+    .featured-description {
+        max-width: 100%;
+        margin-right: 30px;
+        line-height: 1rem;
+    }
+
+    .featured-genres {
+        font-size: 11px;
+    }
+    
+
+}
